@@ -1,0 +1,118 @@
+<!-- Me falta -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Encuesta estadia Hotel Galagar</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="title" class="centrar-texto">
+                    Encuesta estadia Hotel Galagar
+                </h1>
+                <p id="description" class="description centrar-texto">
+                    Gracias por tomarte el tiempo de dejar una reseña.
+                </p>
+            </header>
+            <main>
+                <section>
+                    <form id="survey-form" action="">
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="name" id="name-label">Nombre</label>
+                                <input id="name" type="text" name="name" placeholder="Ingrese su nombre" value="name"required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" id="email-label">Email</label>
+                                <input id="email" type="email" name="email" placeholder="Ingrese su email" required value="email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="age" id="number-label">Edad</label>
+                                <input id="number" type="number" min="18" max="120" placeholder="Ingrese su edad" value="number"/>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="dropdown"> Como nos puntuarias del 1 al 5?
+                                    <select id="dropdown" name="dropdown" class="despegar-texto">
+                                        <option disabled selected value>(elija valoracion)</option>
+                                        <option value="cinco-estrellas">★★★★★</option>
+                                        <option value="cuatro-estrellas">★★★★</option>
+                                        <option value="tres-estrellas">★★★</option>
+                                        <option value="dos-estrellas">★★</option>
+                                        <option value="una-estrella">★</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <p>Nos recomendarias?</p>
+                                <label for="si"><input class="inline" id="si" type="radio" name="user-recomendation" value="por-supuesto">Por supuesto</label>
+                                <label for="capaz"><input class="inline" id="capaz" type="radio" name="user-recomendation" value="quizas">Quizás</label>
+                                <label for="no"><input class="inline" id="no" type="radio" name="user-recomendation" value="no-creo">No creo</label>
+                            </div>
+                            <div class="form-group">
+                                <label for=""> Que fue lo mejor del hotel?
+                                    <select name="" id="" class="despegar-texto">
+                                        <option disabled selected value>(elija una opcion)</option>
+                                        <option value="Desayuno">Desayuno</option>
+                                        <option value="Atencion">Atencion</option>
+                                        <option value="Habitacion">Habitacion</option>
+                                        <option value="Limpieza">Limpieza</option>
+                                        <option value="WiFi">WiFi</option>
+                                        <option value="WiFi">Servicios extra</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <p class="despegar-texto">
+                                    Que te gustaría que mejoremos?
+                                    <span class="clue">(Marca todas las opciones que aplican)</span>
+                                </p>
+                                <label>
+                                    <input name="preferencia" type="checkbox" class="inline" value="Desayuno"/>
+                                    Desayuno
+                                </label>
+                                <label>
+                                    <input name="preferencia" type="checkbox" class="inline" value="Atencion"/>
+                                    Atencion
+                                </label>
+                                <label>
+                                    <input name="preferencia" type="checkbox" class="inline" value="Habitacion"/>
+                                    Habitacion
+                                </label>
+                                <label>
+                                    <input name="preferencia" type="checkbox" class="inline" value="Limpieza"/>
+                                    Limpieza
+                                </label>
+                                <label>
+                                    <input name="preferencia" type="checkbox" class="inline" value="WiFi"/>
+                                    WiFi
+                                </label>
+                                <label>
+                                    <input name="preferencia" type="checkbox" class="inline" value="Servicios-extra"/>
+                                    Servicios extra
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <p>Algún comentario o recomendacion?</p>
+                                <label for="comentario">
+                                    <textarea name="comentario" id="comentario" cols="30" rows="3" placeholder="Ingrese su comentario aquí." value="comentario"></textarea>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <div class="form-group">
+                            <button type="submit" id="submit" class="submit-button" value="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
