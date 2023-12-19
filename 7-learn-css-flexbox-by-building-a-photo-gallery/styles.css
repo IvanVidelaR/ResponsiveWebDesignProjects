@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box; 
+    /* elimina el padding, margin que viene por defecto en muchos navegadores, haciendo que el tamaño de la caja se ajuste al del borde*/
+}
+
+body {
+    margin: 0;
+    /* delimito el margen de todo a 0 */
+    font-family: sans-serif;
+    background: #f5f6f7;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery {
+    display: flex;
+    /* contenedor flexible */
+    flex-direction: row;
+    /* establece la direccion principal del contenedor como horizontal, es decir todos los elementos hijos se organizarán en una fila */
+    flex-wrap: wrap;
+    /*  permite que los elementos hijos se envuelvan a una nueva línea si no hay suficiente espacio en el contenedor principal. */
+    justify-content: center;
+    /* alinea los elementos hijos horizontalmente en el centro del contenedor principal. */
+    align-items: center;
+    /* alinea los elementos hijos verticalmente en el centro del contenedor principal. */
+    gap: 16px;
+    /* Agrega un espacio entre los elementos hijos para que haya un margen entre ellos */
+    max-width: 1400px;
+    /* Establece el ancho máximo en 1400px, haciendo que no se extienda tanto en pantallas muy grandes */
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover; 
+    /* ajusta las imágenes para que cubran todo el espacio disponible en su contenedor, sin distorsionar su relación de aspecto. */
+    border-radius: 10px;
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
+}
