@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5em;
+}
+
+.title {
+    font-family: "Playfair display";
+    letter-spacing: 0.1em;
+    line-height: 1em;
+}
+
+.link_imagen {
+    cursor: default;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    transition: all 2s;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.logo:hover {
+    width: 130px;
+}
+
+.logo:active {
+    width: 100px;
+}
+
+#navbar {
+    position: fixed;
+    width: 390px;
+    height: 100%;
+    border-right: solid;
+    border-color: #373F51;
+    background-color: #58A4B0; 
+}
+
+#navbar ul {
+    height: 72%;
+    padding: 0;
+    overflow: auto;
+    font-size: 1.5em;
+}
+
+#navbar ul li {
+    cursor: pointer;
+    list-style: none;
+    width: 100%;
+    border-top: 1px solid;
+    color: #373F51;
+}
+
+#navbar ul li:last-of-type {
+    padding-bottom: 50px;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 18px 30px; 
+    cursor: pointer;
+    text-decoration: none;
+    color: #373F51;
+}
+
+#navbar ul li:active, #navbar ul li:hover {
+    background: #D8DBE2;
+    transition: .3s;
+}
+
+header {
+    color: black;
+    margin: 30px 10px;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: thin;
+}
+
+#main-doc {
+    margin-left: 395px;
+    padding: 20px;
+    margin-bottom: 110px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    background: #e5e6e9;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+    padding: 20px 0;
+    font-family: "Roboto Condensed";
+    letter-spacing: 0.03em;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+h3 {
+    font-weight: normal;
+    font-style: italic;
+}
+
+code {
+    display: block;
+    text-align: left;
+    line-height: 2em;
+    background-color: #d7d8dc;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+article ul li a {
+    color: #58A4B0;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+article ul li a:hover {
+    font-size: 1.2em;
+}
+
+@media (max-width: 850px) {
+    .title {
+        display: inline-block;
+        font-size: 1.9em;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    #navbar ul {
+        position: fixed;
+        background-color: #A9BCD0;
+        width: 100%;
+        height: 90vh;
+        border: 1px solid;
+        top: 10px;
+        text-align: center;
+        transition: all .5s;
+        left: -1000px;
+        margin-top: 100px;
+    }
+    
+    #navbar {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        left: 0; 
+        height: 110px;
+        width: 100%;
+        z-index: 1;
+        border: none;
+        border-bottom: 2px solid;
+    }
+
+    .link_imagen {
+        cursor: default;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        width: 75px;
+    }
+
+    .logo:hover {
+        width: 75px;
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: 0;
+        margin-top: 110px;
+    }
+
+    section {
+        scroll-margin-top: 110px; 
+    }
+
+    .checkbtn {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    header {
+        line-height: 1.2em;
+    }
+}

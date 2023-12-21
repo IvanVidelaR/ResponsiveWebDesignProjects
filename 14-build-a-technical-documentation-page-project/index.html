@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Technical Documentation Page</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header class="title">Python Docs</header>
+            <a class="link_imagen" href="https://www.python.org/" target="_blank">
+                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Logo_python">
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+                <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+                <li><a class="nav-link" href="#Variables">Variables</a></li>
+                <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+                <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+                <li><a class="nav-link" href="#Constants">Constants</a></li>
+                <li><a class="nav-link" href="#Control_Structures">Control Structures</a></li>
+                <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+                <li><a class="nav-link" href="#Data_Structures">Data Structures</a></li>
+                <li><a class="nav-link" href="#Functions_declaration">Functions declaration</a></li>
+                <li><a class="nav-link" href="#Reference">Reference</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc"><!-- Technical documentation page main content -->
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>
+                    Python is a versatile and powerful programming language known for its simplicity and readability. It is designed to be easy to understand and write, making it an excellent choice for both beginners and experienced developers. Python can be used for a wide range of applications, from web development to scientific computing, data analysis, artificial intelligence, and more.
+                </p>
+
+                <p>
+                    Python comes with a comprehensive standard library that includes a wide variety of modules and functions to help you accomplish tasks efficiently. Some of the core modules include:
+                </p>
+
+                <ul>
+                    <li><strong>os:</strong> Provides functions for interacting with the operating system, such as file operations and directory manipulations.</li>
+                    <li><strong>math:</strong> Offers mathematical functions and constants for numerical calculations.</li>
+                    <li><strong>datetime:</strong> Allows manipulation of dates, times, and time intervals.</li> 
+                    <li><strong>random:</strong> Provides functions for generating random numbers and making random selections.</li>
+                    <li><strong>json:</strong> Enables encoding and decoding JSON (JavaScript Object Notation) data.</li>
+                    <li><strong>urllib:</strong> Facilitates working with URLs and making network requests.</li>
+                </ul>
+
+                <p>Python's ecosystem extends beyond the standard library, thanks to its rich package repository. The Python Package Index (PyPI) hosts thousands of third-party libraries that cater to various needs. These libraries cover areas such as web frameworks, data analysis, machine learning, and more. Some popular libraries include:</p>
+
+                <ul>
+                    <li><strong>NumPy:</strong> A fundamental package for scientific computing with Python, providing support for arrays and mathematical functions.</li>
+                    <li><strong>Pandas:</strong> Offers data structures and tools for efficient data manipulation and analysis.</li>
+                    <li><strong>Django:</strong> A high-level web framework that simplifies the process of building robust and scalable web applications.</li> 
+                    <li><strong>Flask:</strong> A lightweight web framework that allows you to quickly create web applications with minimal boilerplate code.</li>
+                    <li><strong>Matplotlib:</strong> A plotting library that enables the creation of various types of visualizations.</li>
+                </ul>
+
+                <p>
+                    Whether you're a beginner looking to learn programming or an experienced developer working on complex projects, Python's versatility, community support, and vast ecosystem make it a valuable language to master.
+                </p>
+            </section>
+            <section class="main-section" id="What_you_should_already_know">
+                <header>What you should already know
+                </header>
+                <p>
+                    This guide assumes you have the following basic background:
+                </p>
+                <ul>
+                    <li>
+                        A general understanding of the Internet and the World Wide Web (WWW).
+                    </li>
+                    <li>
+                        Good working knowledge of HyperText Markup Language (HTML).
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="Hello_World">
+                <header>Hello World</header>
+                <p>
+                    To begin coding in Python, you can follow these steps to write your first "Hello world" Python code:
+                </p>
+                <ol>
+                    <li>Open a text editor or an Integrated Development Environment (IDE) where you can write Python code.</li>
+                    <li>Write the following code to create a simple function that prints "Hello" followed by the name you provide as an argument:</li>
+                    <code>
+                        def greet_me(your_name):<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print("Hello " + your_name)
+                        <br>greet_me("World")
+                    </code>
+                    <li>Save the file with a .py extension, such as hello.py.</li>
+                    <li>Open a terminal or command prompt and navigate to the directory where you saved the hello.py file.</li>
+                    <li>Run the Python script by typing the following command:</li>
+                    <code>python hello.py</code>
+                </ol>
+                <p>
+                    Congratulations! You've just written and executed your first Python code. You can modify the your_name argument in the greet_me function to print different names.
+                </p>
+            </section>
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
+                <p>In Python, variables serve as symbolic names for storing values within your code. These names, referred to as identifiers, adhere to specific rules and conventions.</p>
+                <p>A Python identifier must start with a letter (either uppercase or lowercase) or an underscore (_). Subsequent characters can also include digits (0-9). Python is case sensitive, distinguishing between uppercase and lowercase letters.</p>
+                <p>Unicode characters, including letters like "å" and "ü," can be used in Python identifiers. Unicode escape sequences can also be used as characters within identifiers. This allows for flexibility in naming variables.</p>
+                <p>It's important to choose meaningful and descriptive names for your variables to enhance the readability of your code. Variable names like total, count, or value can help others understand the purpose of the variable at a glance.</p>
+                <p>Python's emphasis on readability and adherence to naming conventions makes it easier to write and maintain code, especially when working on collaborative projects. </p>
+            </section>
+            <section class="main-section" id="Declaring_variables">
+                <header>Declaring variables</header>
+                <p>
+                    In Python, you can declare variables using straightforward syntax. There are no explicit keywords like var or let as in JavaScript. Instead, you simply assign a value to a name, and Python automatically determines the scope and type of the variable.
+                </p>
+                <p>
+                    Assigning a Value:
+                    You can declare a variable by directly assigning a value to it. Python will automatically create the variable and determine its scope based on where it's defined. For example:
+                </p>
+                <code>
+                    x = 42
+                </code>
+                <p>
+                    This creates a global variable x with a value of 42. See Variable scope below.
+                </p>
+            </section>
+            <section class="main-section" id="Variable_scope">
+                <header>Variable scope</header>
+                <p>
+                    In Python, variable scope refers to where a variable is accessible and can be used within your code. There are two main types of variable scope: global scope and local scope.
+                </p>
+                <ol>
+                    <li>
+                        <strong>Global Scope:</strong>
+                        When you declare a variable outside of any function or code block, it becomes a global variable. Global variables are accessible from any part of your code, including functions and blocks. They maintain their value throughout the entire program. For example:
+                    </li>
+                    <code>
+                        global_var = 42
+                        print(global_var)
+                    </code>
+                    <li>
+                        <strong>Local Scope:</strong>
+                        When you declare a variable within a function or a specific block, it becomes a local variable. Local variables are only accessible within the function or block where they are defined. They have a limited scope and are typically used for temporary storage within a specific context. For example:
+                    </li>
+                    <code>
+                        def my_function(): <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            local_var = 13 <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            print(local_var) <br>
+                        my_function()
+                    </code>
+                </ol>
+                <p>Unlike JavaScript's pre-ECMAScript 2015 behavior, Python's scoping rules are consistent across functions and blocks. Variables declared within a block, such as an if statement or a loop, maintain their scope only within that block. Similarly, Python doesn't allow you to access a variable declared inside a block from outside that block.</p>
+            </section>
+            <section class="main-section" id="Constants">
+                <header>Constants</header>
+                <p>
+                    In Python, constants are typically represented using uppercase names to indicate that their values should not change during program execution. While Python does not have a direct const keyword like JavaScript, adhering to naming conventions helps achieve the same purpose.
+                </p>
+                <h3>Naming Conventions</h3>
+                <ul>
+                    <li>Constants are often named using uppercase letters to distinguish them from variables.</li>
+                    <li>By convention, constants' values remain unchanged throughout the program.</li>
+                </ul>
+                <code>
+                    PI = 3.14
+                </code>
+                <h3>Behavior and limitations</h3>
+                <ul>
+                    <li>Constants are not built-in to Python's syntax like in JavaScript; they rely on naming conventions.</li>
+                    <li>Their values are not intended to be modified after assignment.</li>
+                </ul>
+                <h3>Scope and Re-declaration</h3>
+                <ul>
+                    <li>Python does not enforce constant behavior through a specific keyword.</li>
+                    <li>Variables declared with uppercase letters follow the convention of constants.</li>
+                </ul>
+                <p>
+                    Even though Python doesn't have a dedicated const keyword, using uppercase letters and following naming conventions allows you to achieve similar functionality, promoting code clarity and understanding.
+                </p>
+            </section>
+            <section class="main-section" id="Control_Structures">
+                <header>Control Structures</header>
+                <p>
+                    Control structures in Python are used to manage the flow of code execution based on conditions or to iterate over sequences of data. They help you make decisions, repeat actions, and control the logical flow of your program.
+                </p>
+                <h3>
+                    If statement
+                </h3>
+                <p>
+                    The if statement allows you to execute a block of code if a certain condition is met. You can also use elif (short for "else if") to add additional conditions, and else to provide a default action when no condition is met.
+                </p>
+                <code>
+                    age = 18 <br>
+
+                    if age < 18: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("You are a minor.") <br>
+                    elif age == 18: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("You just turned 18!") <br>
+                    else: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("You are an adult.")
+                </code>
+                <h3>
+                    While Loop
+                </h3>
+                <p>
+                    The while loop repeatedly executes a block of code as long as a given condition is true. This is useful for situations where you want to perform a task until a specific condition is no longer met.
+                </p>
+                <code>
+                    count = 0 <br>
+
+                    while count < 5: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("Count:", count) <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;count += 1 <br>
+                </code>
+                <h3>
+                    For Loop
+                </h3>
+                <p>The for loop is used to iterate over a sequence (such as a list, tuple, string, or range) and execute a block of code for each item in the sequence.</p>
+                <code>
+                    fruits = ["apple", "banana", "cherry"] <br>
+
+                    for fruit in fruits: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("I like", fruit)
+                </code>
+                <h3>
+                    Range Function
+                </h3>
+                <p>
+                    The range() function generates a sequence of numbers, which is often used with the for loop to iterate a specific number of times.
+                </p>
+                <code>
+                    for i in range(5): <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("Iteration:", i) <br><br>
+                </code>
+            </section>
+            <section class="main-section" id="Data_Types">
+                <header>Data Types</header>
+                <p>In Python, data types define the nature of values that variables can hold. Python supports a variety of data types to accommodate different kinds of data. Here are some of the fundamental data types in Python</p>
+                <h3>Numeric Data Types</h3>
+                <ul>
+                    <li>
+                        <strong>int:</strong> Represents integer numbers. For example: 5, -10, 1000.
+                    </li>
+                    <li>
+                        <strong>float:</strong> Represents floating-point numbers with decimal values. For example: 3.14, -0.5, 2.0.
+                    </li>
+                </ul>
+                <h3>Text Data Type</h3>
+                <ul>
+                    <li><strong>str:</strong> Represents strings of characters. Strings can be enclosed in single (' ') or double (" ") quotes. For example: "Hello", 'Python'.</li>
+                </ul>
+                <h3>Boolean Data Type</h3>
+                <ul>
+                    <li><strong>bool:</strong> Represents boolean values. It has two possible values: True and False. Used for logical operations and conditions.</li>
+                </ul>
+                <h3>
+                    Sequence Data Types
+                </h3>
+                <ul>
+                    <li>
+                        <strong>list:</strong> Represents ordered, mutable collections of elements. Lists can contain various data types. For example: [1, 2, 3], ['apple', 'banana', 'cherry'].
+                    </li>
+                    <li>
+                        <strong>tuple:</strong> Represents ordered, immutable collections of elements. For example: (10, 20, 30).
+                    </li>
+                    <li>
+                        <strong>set:</strong> Represents an unordered collection of unique elements. For example: {1, 2, 3}.
+                    </li>
+                </ul>
+                <h3>Mapping Data Type</h3>
+                <ul>
+                    <li>
+                        <strong>dict:</strong> Represents a collection of key-value pairs. For example: {'name': 'John', 'age': 30}.
+                    </li>
+                </ul>
+                <h3>None Type</h3>
+                <ul>
+                    <li>
+                        NoneType: Represents the absence of a value. Used as a placeholder or to indicate the absence of a return value in functions.
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="Data_Structures">
+                <header>Data Structures</header>
+                <p>Data structures are essential tools in programming for organizing and storing data in a way that allows efficient manipulation and retrieval. Python provides a variety of built-in data structures that cater to different needs. Here are some of the most commonly used data structures in Python.</p>
+                <h3>Lists</h3>
+                <p>A list is a versatile data structure that can hold a collection of items. Lists are ordered and mutable, meaning you can add, remove, or modify elements after creation.</p>
+                <code>
+                    my_list = [1, 2, 3, 4, 5] <br>
+                    my_list.append(6) <br>
+                    my_list.remove(3)
+                </code>
+                <h3>Tuples</h3>
+                <p>Similar to lists, tuples are ordered collections of items. However, tuples are immutable, meaning their contents cannot be changed after creation. Tuples are often used for data that should not be modified.</p>
+                <code>
+                    my_tuple = (10, 20, 30)
+                </code>
+                <h3>Sets</h3>
+                <p>Sets are unordered collections of unique elements. They are useful for removing duplicates from a sequence and performing set operations like union, intersection, and difference.</p>
+                <code>
+                    my_set = {1, 2, 3, 4, 5} <br>
+                    my_set.add(6)
+                </code>
+                <h3>Dictionaries</h3>
+                <p>Dictionaries store data as key-value pairs. Each key in a dictionary is unique, and you can use the key to retrieve its associated value quickly.</p>
+                <code>
+                    my_dict = {'name': 'John', 'age': 30, 'city': 'New York'} <br>
+                    my_dict['occupation'] = 'Engineer' <br><br>
+                </code>
+            </section>
+            <section class="main-section" id="Functions_declaration">
+                <header>Functions declaration</header>
+                <p>A function definition (also referred to as a function declaration or function statement) in Python consists of the def keyword, followed by:</p>
+                <ul>
+                    <li>The name of the function.</li>
+                    <li>A list of parameters enclosed in parentheses and separated by commas.</li>
+                    <li>A colon (:) to indicate the beginning of the function's code block.</li>
+                    <li>The Python statements that define the function's behavior, indented within a block.</li>
+                </ul>
+                <p>For instance, consider the following code that defines a simple function named square:</p>
+                <code>
+                    def square(number): <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;return number * number
+                </code>
+                <p>In this example, the function square takes a single argument called number. The function's behavior is defined by a single statement that returns the square of the given argument. The return statement specifies the value to be returned by the function.</p>
+                <code>
+                    return number * number
+                </code>
+                <p>
+                    Primitive parameters (such as numbers) are passed to functions by value in Python. This means that the value is passed to the function, but any changes to the parameter's value within the function do not affect the original value outside the function or in the calling code.
+                </p>
+                <p>
+                    Function definitions are essential for creating reusable pieces of code. They allow you to encapsulate logic, make your code modular, and promote code readability. Just like in your JavaScript example, you can further explain the concepts of function parameters, return values, and scope in Python functions.
+                </p>
+            </section>
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <article>
+                    <ul>
+                        <li>
+                            All the documentation in this page was generated by <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
