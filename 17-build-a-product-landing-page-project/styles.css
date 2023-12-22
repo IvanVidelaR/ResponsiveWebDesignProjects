@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px; 
+    overflow-x: hidden;
+}
+
+.page-wrapper 
+{
+    position: relative;
+    width: 100%;
+}
+
+.background-container {
+    background-image: url(https://img.freepik.com/fotos-premium/joyeria-mujer-cadena-oro-joyeria-moda-sobre-fondo-seda_125966-3738.jpg?w=2000);
+    background-size: 100% auto;
+    background-position: center;
+    height: 500px; 
+    opacity: 0.9;
+}
+
+.container-frase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #edf0f160;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.container-frase h1 {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 4px;
+    font-size: 40px;
+    -webkit-text-stroke: 2px black;
+    max-width: 100%;
+}
+
+strong
+{
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.fondo_blanco {
+    background-color: #edf0f1;   
+}
+
+.fondo_oscuro {
+    background-color: #24252A;
+}
+
+#form {
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h2 {
+    color: #edf0f1;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+}
+
+li, a, button, .btn, #email {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+#email {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+header {
+    padding: 30px 0;
+    justify-content: flex-end;
+    background-color: #24252A; 
+    z-index: 1000; 
+    position: fixed;
+    width: 100%;
+}
+
+main {
+    padding-top: 125px;
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#features {
+    height: 500px;
+    flex-direction: column;
+}
+
+.description {
+    max-width: 400px;
+}
+
+.logo {
+    width: 15vw;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+@media (max-width: 900px) {
+    li, a, .btn{
+        font-size: 12px;
+    }
+    .logo {
+        width: 40vw;
+    }
+}
+
+.nav__links {
+    list-style: none;
+    margin-right: 20px;
+}
+
+@media (max-width: 690px) {
+    .nav__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .nav__links li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav__links li a {
+        display: block;
+    }
+}
+
+.grid {
+    display: flex;
+    padding: 20px;
+}
+
+@media (max-width: 400px) {
+    #header {
+        flex-wrap: wrap;
+    }
+
+    .container-frase{
+        padding: 0;
+    }
+
+    .grid {
+        padding: 0;
+    }
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #efb810;
+}
+
+
+.img {
+    height: 100px;
+    width: 100px;
+}
+
+.icon {
+    margin-right: 5vw;
+}
+
+.description p {
+    color: white;
+}
+
+.description h2 {
+    text-align: justify;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(1200px / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background-color: #FFFFE4B5;
+}
+
+.product .level {
+    background-color: #24252A;
+    color: #edf0f1;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product h2 {
+    color: black;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 9px 25px;
+    background-color: #efb810;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    transition: all 0.3s ease 0s;
+    color: black;
+    margin: 15px 0;
+}
+
+.btn:hover {
+    background-color: #efb81099;
+}
+@media (max-width: 800px) {
+    #pricing {
+    flex-direction: column;
+    }
+    .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    }
+}
+.container-video {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.productsimg {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Jewelry Website. Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="fondo_oscuro">
+            <header id="header" class="container">
+                <img id="header-img" class="logo" src="https://images.squarespace-cdn.com/content/v1/576d041b15d5db028a1d3a77/1466772694944-ZXU54ZBSXZZNS2R5B1GR/FACEBOOK-PROFILE-PIC-1.png" alt="jdavidjewelry">
+                <nav id="nav-bar"">
+                    <ul class="nav__links">
+                        <li><a class="nav-link" href="#features">Features</a></li>
+                        <li><a class="nav-link" href="#work">Work</a></li> 
+                        <!-- color dorado -->
+                        <li><a class="nav-link" href="#pricing">Collections</a></li>
+                    </ul>
+                </nav>
+                <a class="cta" href="#form">
+                    <button class="btn">Shop</button>
+                </a>
+            </header>
+        </div>
+        <main>
+            <section class="fondo_blanco">
+                <div class="background-container container">
+                    <div class="container-frase">
+                        <h1>
+                            <span>
+                                Bespoke <br>
+                                    <strong>Jewelry</strong>
+                                for all <br>occasions.
+                            </span>                        
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            <div class="fondo_oscuro">
+                <section id="features" class="container">
+                    <div class="grid">
+                        <div class="icon">
+                            <img class="img" src="https://cdn-icons-png.flaticon.com/512/1892/1892655.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h2>Precious Materials, Timeless Beauty</h2>
+                            <p>Our jewelry features the world's finest materials, creating timeless pieces that reflect your unique style and taste.</p>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="icon">
+                            <img class="img" src="https://cdn-icons-png.flaticon.com/512/5952/5952766.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h2>Swift Delivery, Easy Returns</h2>
+                            <p>Get your exquisite jewelry quickly, and enjoy worry-free returns if needed. Your satisfaction is our priority.</p>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="icon">
+                            <img class="img" src="https://cdn-icons-png.flaticon.com/512/1875/1875684.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h2>Guaranteed Quality</h2>
+                            <p>We meticulously inspect each piece to ensure it's flawless, so you receive the finest quality jewelry.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="fondo_blanco">
+                <div id="work"class="container-video">
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/x1KmZIMKsSg?si=7ZbF5j3Zy_zgEFi-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                </div>
+                <section id="pricing">
+                    <div class="product" id="Earrings">
+                        <div class="level">Earrings</div>
+                        <h2>$600</h2>
+                        <img class="productsimg" src="https://pngimg.com/d/jewelry_PNG6809.png" alt="Earrings">
+                        <button class="btn">Select</button>
+                    </div>
+                    <div class="product" id="Bracelets">
+                        <div class="level">Bracelets</div>
+                        <h2>$900</h2>
+                        <img class="productsimg" src="https://admin.pngadgil1832.com/UploadedFiles/ProductImages/BRL4956537PNG_01.png" alt="Bracelets">
+                        <button class="btn">Select</button>
+                    </div>
+                    <div class="product" id="Necklaces">
+                        <div class="level">Necklaces</div>
+                        <h2>$1200</h2>
+                        <img class="productsimg" src="https://pngimg.com/d/necklace_PNG65.png" alt="Necklaces">
+                        <button class="btn">Select</button>
+                    </div>
+                </section>
+            </div>
+                
+            <section class="fondo_oscuro">
+                <form class="container" id="form" action="https://www.freecodecamp.com/email-submit">
+                    <h2>Handcrafted, home-made beautiful Jewelry</h2>
+                    <input name="email" type="email" id="email" placeholder="Enter your email address">
+                    <input id="submit" type="submit" value="Shop now" class="btn"/>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
