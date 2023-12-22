@@ -269,12 +269,3 @@ body {
     position: absolute;
     margin-top: -58px;
 }
-
-.frase {
-    position: absolute;
-    font: bold 20px Helvetica, sans-serif;
-    top: -10px;
-    left: 10px;
-    z-index: 11;
-    color: #6a6969;
-}
